@@ -29,10 +29,10 @@ def main():
             # Use csv.Sniffer to detect delimiter
             sample = file.read(1024)
             file.seek(0)
-            sniffer = csv.Sniffer()
-            delimiter = sniffer.sniff(sample).delimiter
+            # sniffer = csv.Sniffer()
+            # delimiter = sniffer.sniff(sample).delimiter
             
-            reader = csv.reader(file, delimiter=delimiter)
+            reader = csv.reader(file, delimiter=',')
             
             # Get header row (column names)
             headers = next(reader)
