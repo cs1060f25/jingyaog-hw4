@@ -58,7 +58,7 @@ module.exports = async function handler(req, res) {
         SELECT chr.*
         FROM county_health_rankings chr
         JOIN zip_county zc ON chr.fipscode = zc.county_code
-        WHERE zc.﻿zip = ? AND chr.Measure_name = ?
+        WHERE zc.zip = ? AND chr.Measure_name = ?
       `;
 
       db.all(query, [zip, measure_name], (err, rows) => {
