@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/county_data",
+      "dest": "/api/county_data.js"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404
+    }
+  ]
+}

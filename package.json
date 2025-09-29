@@ -1,0 +1,17 @@
+{
+  "name": "county-health-api",
+  "version": "1.0.0",
+  "description": "API for county health rankings data",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
