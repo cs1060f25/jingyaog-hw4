@@ -60,3 +60,7 @@ curl -X POST https://jingyaog-hw4.vercel.app/api/county_data \
 ## Deployment
 
 Deployed on Vercel as serverless functions. The API automatically connects to the SQLite database and performs JOIN queries between ZIP code and county health rankings tables.
+
+## Code Source
+
+Part of the code was generated using GPT-4o in the Harvard Sandbox, with additional development and refinements completed using Claude Code.
